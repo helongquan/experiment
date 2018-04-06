@@ -6,15 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://helongquan.github.io/experiment">
-  <title>Tag: hexo,个人博客 | 鸢尾花序</title>
+  <title>使用Hexo搭建个人博客（二）-安装部署 | 鸢尾花序</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="鸢尾花序">
-<meta property="og:url" content="https://helongquan.github.io/experiment/tags/hexo-个人博客/index.html">
+  <meta name="description" content="整个Hexo搭建过程虽然看是步骤比较多，但是自己装一遍后，就发现其实要做的事情就那么几样，安装Node.JS、Git、Hexo，然后需要配置下GitHub,访问国外的GitHub如果速度比较慢的话，也可以用国内的Coding net（我用的就是这个，其实也就是找个能免费放静态网站的地方，不用自己再去买个虚拟主机，而且也还有免费的域名可用）。整个安装过程大致如下所示，每一步我会详细说明： 1、搭建">
+<meta name="keywords" content="hexo,个人博客">
+<meta property="og:type" content="article">
+<meta property="og:title" content="使用Hexo搭建个人博客（二）-安装部署">
+<meta property="og:url" content="https://helongquan.github.io/experiment/experiment/2018/04/05/使用Hexo搭建个人博客（二）-安装部署/index.html">
 <meta property="og:site_name" content="鸢尾花序">
+<meta property="og:description" content="整个Hexo搭建过程虽然看是步骤比较多，但是自己装一遍后，就发现其实要做的事情就那么几样，安装Node.JS、Git、Hexo，然后需要配置下GitHub,访问国外的GitHub如果速度比较慢的话，也可以用国内的Coding net（我用的就是这个，其实也就是找个能免费放静态网站的地方，不用自己再去买个虚拟主机，而且也还有免费的域名可用）。整个安装过程大致如下所示，每一步我会详细说明： 1、搭建">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-04-05T14:35:41.511Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="鸢尾花序">
+<meta name="twitter:title" content="使用Hexo搭建个人博客（二）-安装部署">
+<meta name="twitter:description" content="整个Hexo搭建过程虽然看是步骤比较多，但是自己装一遍后，就发现其实要做的事情就那么几样，安装Node.JS、Git、Hexo，然后需要配置下GitHub,访问国外的GitHub如果速度比较慢的话，也可以用国内的Coding net（我用的就是这个，其实也就是找个能免费放静态网站的地方，不用自己再去买个虚拟主机，而且也还有免费的域名可用）。整个安装过程大致如下所示，每一步我会详细说明： 1、搭建">
   
   
     <link rel="icon" href="/favicon.png">
@@ -148,36 +153,216 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-使用Hexo搭建个人博客（二）-安装部署" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/experiment/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/experiment/experiment/2018/04/05/使用Hexo搭建个人博客（二）-安装部署/" class="archive-article-date">
-  	<time datetime="2018-04-05T14:28:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-05</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/experiment/experiment/2018/04/05/使用Hexo搭建个人博客（二）-安装部署/">使用Hexo搭建个人博客（二）-安装部署</a>
+    <h1 class="article-title" itemprop="name">
+      使用Hexo搭建个人博客（二）-安装部署
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/experiment/experiment/2018/04/05/使用Hexo搭建个人博客（二）-安装部署/" class="archive-article-date">
+  	<time datetime="2018-04-05T14:28:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-05</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>整个Hexo搭建过程虽然看是步骤比较多，但是自己装一遍后，就发现其实要做的事情就那么几样，安装Node.JS、Git、Hexo，然后需要配置下GitHub,访问国外的GitHub如果速度比较慢的话，也可以用国内的Coding net（我用的就是这个，其实也就是找个能免费放静态网站的地方，不用自己再去买个虚拟主机，而且也还有免费的域名可用）。<br>整个安装过程大致如下所示，每一步我会详细说明：</p>
+<pre><code>1、搭建 Node.js 环境
+2、搭建 Git 环境
+3、安装配置 Hexo
+4、GitHub 注册和配置
+5、关联 Hexo 与 GitHub Pages
+6、GitHub Pages 地址解析到个人域名
+7、Hexo 的常用操作
+</code></pre><p>搭建 Node.js 环境</p>
+<p>Node.js是一个基于Chrome JavaScript 运行时建立的一个平台。</p>
+<p>Node.js是一个事件驱动I/O服务端JavaScript环境，基于Google的V8引擎，V8引擎执行Javascript的速度非常快，性能非常好。而Hexo就是一款基于Node.js的静态博客框架，通过Node.js来生成静态的Web页面。</p>
+<p>Node.js的官方网站如下所示：</p>
+<p>中文网站：<a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener">https://nodejs.org/zh-cn/</a><br>英文网站：<a href="https://nodejs.org/en/" target="_blank" rel="noopener">https://nodejs.org/en/</a></p>
+<p>可以在以上网站来下载所需要的版本。</p>
+<p>在官方网站上可以看到有两个版本，一个是LTS版本，一个是Current版本。</p>
+<p><strong>Hexo2</strong></p>
+<p>LTS是长期支持(Long Term Support)的缩写，意味着提供长期稳定的维护，Current版本也就是最新版，包含了很多新特性。下载哪个版本可以看自己的喜好。</p>
+<p>因为我自己电脑是Win10系统，并且也想使用下新特性，所以下载的node-v8.2.1-x64.msi文件。</p>
+<p>安装Node.js</p>
+<p>Windows环境下Node.js安装非常简单，一路”Next”,最后等待安装完成即可：</p>
+<p>保持默认设置即可，一路Next，安装很快就结束了。 然后我们检查一下是不是要求的组件都安装好了，同时按下Win和R，打开运行窗口：</p>
+<p>在新打开的窗口中输入cmd，敲击回车，打开命令行界面。（下文将直接用打开命令行来表示以上操作，记住哦~）在打开的命令行界面中，输入:</p>
+<p>node -v</p>
+<pre><code>npm -v
+</code></pre><p>如果结果如下图所示，则说明安装正确，可以进行下一步了，如果不正确，则需要回头检查自己的安装过程。</p>
+<p>搭建 Git 环境</p>
+<p>Git是一款免费、开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。<br>安装Git用途其实也就是把本地的Hexo内容（既静态的Web网站）提交到github或者Coding net等其他的代码托管站点上。</p>
+<p>Git的官网下载地址为：<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">https://git-scm.com/downloads</a></p>
+<p>安装Git</p>
+<p>大部分按默认安装，一路点击”Next” :</p>
+<p>这里选择对应的windows选项，将会使得Git安装程序在系统PATH中加入Git的相关路径，使得你可以在CMD界面下调用Git，不用打开Git Bash了。如下图 :</p>
+<p>等待安装完成</p>
+<p>安装完成后我们来检查一下Git是不是安装正确了，打开命令行，输入：</p>
+<pre><code>git --version
+</code></pre><p>如果结果如下图所示，则说明安装正确，可以进行下一步了，如果不正确，则需要回头检查自己的安装过程。</p>
+<p><strong>安装配置 Hexo</strong></p>
+<p>Hexo的官网地址为：<a href="https://hexo.io/zh-cn" target="_blank" rel="noopener">https://hexo.io/zh-cn</a></p>
+<p>网站中有详细的介绍和说明，大家可以访问此网站进行详细的了解。</p>
+<p>Node.js和Git都安装好后,即可开始安装Hexo</p>
+<p>安装Hexo很简单只需一条命令即可，不管你是在CMD命令行中执行，还是右键选择Git Bash Here进入来执行都可以。</p>
+<p>在命令行中输入：</p>
+<pre><code>npm install hexo-cli -g
+</code></pre><p>可能你会看到一个WARN，但是不用担心，这不会影响你的正常使用。</p>
+<p>下面我们来看一看Hexo是不是已经安装好了。 在命令行中输入：</p>
+<pre><code>hexo -v
+</code></pre><p><strong>创建Hexo站点</strong></p>
+<p>安装 Hexo 完成后，就可以创建Hexo站点了。可以在E盘或者其他盘中创建Hexo目录，名字随意取。</p>
+<p>比如CMD在命令行窗口中，进入到创建好的Hexo目录中</p>
+<p>进入到此目录下后，我们依次运行以下命令，即可创建好Hexo站点</p>
+<pre><code>hexo init &lt;folder&gt;   &lt;folder&gt; 自己随意命名
+cd &lt;folder&gt;   进入到已命名的&lt;folder&gt;目录中
+npm install
+</code></pre><p>命令全部执行完成后，既可在目录中查看到相应的文件生成，此时站点全部创建完毕。<br>首次体验Hexo</p>
+<p>继续操作，同样是在命令行中，输入hexo g 来生成静态页面：</p>
+<pre><code>hexo g
+</code></pre><p>然后输入hexo s 开启web服务：</p>
+<pre><code>hexo s
+</code></pre><p>然后会提示：</p>
+<pre><code>INFO Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.
+</code></pre><p>在浏览器中打开<a href="http://localhost:4000/，你将会看到：" target="_blank" rel="noopener">http://localhost:4000/，你将会看到：</a></p>
+<p>到目前为止，Hexo在本地的配置已经全都结束了。此时只是在本地创建好了站点并生成了静态页面，下面我们就需要在GitHub上创建代码库，并将本地的代码上传到GitHub上。</p>
+<p><strong>GitHub 注册和配置</strong></p>
+<p>GitHub 是一个代码托管平台，因为只支持 Git 作为唯一的版本库格式进行托管，故名 GitHub。</p>
+<p>Github官网地址为：<a href="https://github.com" target="_blank" rel="noopener">https://github.com</a></p>
+<p><strong>Github注册</strong></p>
+<p>打开<a href="https://github.com，在下图的框中，分别输入自己的用户名，邮箱，密码。" target="_blank" rel="noopener">https://github.com，在下图的框中，分别输入自己的用户名，邮箱，密码。</a></p>
+<p>然后前往自己刚才填写的邮箱，点开Github发送给你的注册确认信，确认注册，结束注册流程。</p>
+<p>一定要确认注册，否则无法使用Github pages（既静态页面托管）！</p>
+<p><strong>创建代码库</strong></p>
+<p>注册完成，登陆之后，点击页面右上角的加号，选择New repository：</p>
+<p><strong>新建代码库</strong></p>
+<p>进入代码库创建页面：</p>
+<p>在Repository name下填写yourname.github.io，Description (optional)下填写一些简单的描述（不写也没有关系），如图所示：</p>
+<p>注意：比如我的github名称是lijunboy008 ,这里你就填 lijunboy008.github.io,如果你的名字是yourname，那你就填yourname.github.io</p>
+<p>与github建立联系</p>
+<p>我们如何让本地git项目与远程的github建立联系呢？用 SSH keys</p>
+<p><strong>1、生成SSH keys</strong></p>
+<p>在命令行中使用如下命令输入你自己的邮箱地址（不管你是在CMD命令行中执行，还是右键选择Git Bash Here进入来执行都可以）</p>
+<pre><code>ssh-keygen -t rsa -C &quot;xxxx@qq.com&quot;
+</code></pre><p>在回车中会提示你输入一个密码，这个密码会在你提交项目时使用，如果为空的话提交项目时则不用输入，我们按回车不设置密码。</p>
+<p><strong>2、添加 SSH Key 到 GitHub</strong></p>
+<p>打开 C:\Users\lijun.ssh\id_rsa.pub，此文件里面内容为刚才生成的密钥，准确的复制这个文件里的内容，粘贴到 <a href="https://github.com/settings/ssh" target="_blank" rel="noopener">https://github.com/settings/ssh</a> 的 new SSH key 中</p>
+<p><strong>3、测试是否添加成功</strong></p>
+<p>可以输入下面的命令，看看设置是否成功，<a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>的部分不要修改：</p>
+<pre><code>ssh -T git@github.com
+</code></pre><p>如果是下面类似的反馈：</p>
+<pre><code>The authenticity of host ‘github.com (207.97.227.239)’ can’t be established. 
+RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48. 
+Are you sure you want to continue connecting (yes/no)?
+</code></pre><p>不要紧张，输入yes就好，然后会看到：</p>
+<pre><code>Hi lijun! You&apos;ve successfully authenticated, but GitHub does not provide shell access.
+</code></pre><p><strong>配置Git个人信息</strong></p>
+<p>现在你已经可以通过 SSH 链接到 GitHub 了，还有一些个人信息需要完善的。<br>Git 会根据用户的名字和邮箱来记录提交。GitHub 也是用这些信息来做权限的处理，输入下面的代码进行个人信息的设置，把名称和邮箱替换成你自己的。</p>
+<pre><code>git config --global user.name &quot;xxxxx&quot;
+git config --global user.email &quot;xxxxx@qq.com&quot;
+</code></pre><p><strong>配置 Deployment</strong></p>
+<p>在_config.yml文件中(此文件在你创建好的Hexo站点目录中)，找到Deployment，然后按照如下修改，用户名改成你自己的GitHub信息：</p>
+<p>需要注意的是：冒号后面记得空一格！</p>
+<pre><code># Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  type: git
+  repo: git@github.com:lijun/lijun.github.io.git
+  branch: master
+</code></pre><p>本地文件提交到GitHub</p>
+<pre><code>// 删除旧的 public 文件
+hexo clean
+// 生成新的 public 文件
+hexo generate
+</code></pre><p>或者</p>
+<pre><code>hexo g
+// 开始部署
+hexo deploye
+或者
+hexo d
+</code></pre><p>如果没有错误产生，此时你本地的代码就已经上传到了Github中。</p>
+<p>注意1：若上面操作失败，则需要提前安装一个扩展：</p>
+<pre><code>npm install hexo-deployer-git --save
+</code></pre><p>注意2：如果在执行 hexo d 后,出现 error deployer not found:github 的错误（如下），则是因为没有设置好 public key 所致，重新详细设置即可。</p>
+<pre><code>Permission denied (publickey). 
+fatal: Could not read from remote repository. 
+Please make sure you have the correct access rights 
+and the repository exists.
+</code></pre><p>关联 Hexo 与 GitHub Pages</p>
+<p>代码库正确创建之后，并且已经将代码上传到了Github中，此时你将会看到如下界面：<br>Hexo15<br>接下来开启Github pages功能，点击界面右侧的Settings，你将会打开这个库的setting页面，向下拖动，直到看见GitHub Pages，如图：<br>Hexo20<br>在红框中选择已经上传的master branch代码。<br>保存之后，此时直接访问之前创建New repository时所填的信息：lijun.github.io，就可以看到相应的web页面信息了，域名和站点都是免费的，是不是很cool！<br>GitHub Pages 地址解析到个人域名</p>
+<pre><code>Github Pages 是面向用户、组织和项目开放的公共静态页面搭建托管服 务，站点可以被免费托管在 Github 上，你可以选择使用 Github Pages 默认提供的域名 github.io 或者自定义域名来发布站点。
+</code></pre><p>看着博客的域名是二级域名，总有一种寄人篱下的感觉，为了让这个小窝看起来更加正式，我在阿里云上买了一个域名，打算将博客绑定自己的域名。进行该绑定过程，其实就是一个重定向的过程。</p>
+<p>在 GitHub 仓库的根目录下建立一个 CNAME 的文本文件(注意：没有扩展名)，文件里面只能输入一个你的域名，不能加http://</p>
+<pre><code>www.xxxxx.com
+</code></pre><p>注意：CNAME 一定是在你 Github 项目的 master 根目录下</p>
+<p>进入阿里云域名解析地址，添加解析：</p>
+<pre><code>1、记录类型选择CNAME
+2、主机记录填www
+3、解析线路选择默认
+4、记录值填yourname.github.io
+5、TTL值为10分钟
+6、再添加一个解析，记录类型A
+7、主机记录填www
+8、解析线路选择默认
+9、记录值填你GitHub 的ip地址（在cmd中ping：）
+</code></pre><p>点击保存，等 1 分钟，访问下你自己的域名，一切就ok了。</p>
+<p>域名绑定成功，域名解析成功，因此你在浏览中输入 <a href="http://www.xxxxx.com，或" target="_blank" rel="noopener">www.xxxxx.com，或</a> xxxxx.com 就可以访问到博客了，输入 lijun.github.io 会重定向到 <a href="http://www.xxxxx.com。" target="_blank" rel="noopener">www.xxxxx.com。</a></p>
+<p>过程：www 的方式，会先解析成 <a href="http://xxxx.github.io，然后根据" target="_blank" rel="noopener">http://xxxx.github.io，然后根据</a> CNAME 再变成 www<br>注意：CNAME文件在下次 hexo deploy的时候就消失了，需要重新创建，这样就很繁琐</p>
+<p>方法一：每次 hexo d 之后，就去 GitHub 仓库根目录新建 CNAME文件</p>
+<p>方法二：在 hexo g 之后， hexo d 之前，把CNAME文件复制到 “\public” 目录下面，里面写入你要绑定的域名。</p>
+<p>方法三（推荐）：将需要上传至github的内容放在source文件夹，例如CNAME、favicon.ico、images等，这样在 hexo d 之后就不会被删除了。</p>
+<p>方法四：通过安装插件实现永久保留</p>
+<pre><code>$ npm install hexo-generator-cname --save
+</code></pre><p>之后在_config.yml中添加一条</p>
+<pre><code>plugins:
+- hexo-generator-cname
+</code></pre><p>需要注意的是：如果是在github上建立的CNAME文件，需要先clone到本地，然后安装插件，在deploy上去即可。CNAME只允许一个域名地址。</p>
+<p>注意：每次生成的 CNAME 都是 yoursite.com 怎么解决？</p>
+<p>修改 _config.yml</p>
+<pre><code>url: http://www.xxxxx.com
+root: /
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+</code></pre><p><strong>Hexo 的常用操作</strong></p>
+<p>参考资料：</p>
+<p><a href="http://blog.csdn.net/qq80583600/article/details/72828063" target="_blank" rel="noopener">http://blog.csdn.net/qq80583600/article/details/72828063</a><br><a href="http://blog.csdn.net/gdutxiaoxu/article/details/53576018" target="_blank" rel="noopener">http://blog.csdn.net/gdutxiaoxu/article/details/53576018</a><br><a href="http://blog.csdn.net/jzooo/article/details/46781805" target="_blank" rel="noopener">http://blog.csdn.net/jzooo/article/details/46781805</a></p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你的关注与支持<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -189,19 +374,93 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=https://helongquan.github.io/experiment/experiment/2018/04/05/使用Hexo搭建个人博客（二）-安装部署/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/experiment/experiment/2018/04/06/实验日记以及注意事项/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          实验日记以及注意事项
+        
+      </div>
+    </a>
   
   
-    </div></section>
+</nav>
+
+
+
+
+
+  
+  
   
 
-    
+  
+
+  
 
 
           </div>
@@ -224,9 +483,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		root: "/experiment/",
